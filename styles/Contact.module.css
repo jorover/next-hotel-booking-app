@@ -1,0 +1,68 @@
+.contactsection {
+  width: 100vw;
+  min-height: 650px;
+  background: url('../public/Images/mth.jpg') no-repeat center center/cover;
+  background-attachment: fixed;
+}
+
+.contactformsection,
+.contactform {
+  display: flex;
+}
+
+.contactformsection {
+  width: 70%;
+  min-height: 400px;
+  background: #fff;
+  margin: 30px auto;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.contactform {
+  flex-direction: column;
+  width: 60%;
+}
+
+.contactformtext {
+  width: 30%;
+  text-align: center;
+  margin: 10px 0px;
+}
+
+.contactformtext p {
+  padding: 10px 0px;
+}
+
+.contactform input,
+.contactform textarea {
+  padding: 10px;
+  margin: 10px 0px;
+}
+
+.contactform button {
+  padding: 10px;
+  background: rgb(0, 68, 77);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 850px) {
+  .contactformsection {
+    width: 90%;
+  }
+}
+
+@media (max-width: 650px) {
+  .contactformsection,
+  .contactformtext,
+  .contactform {
+    width: 100%;
+  }
+
+  .contactformsection {
+    flex-direction: column;
+  }
+}

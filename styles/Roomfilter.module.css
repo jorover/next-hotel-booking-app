@@ -1,0 +1,49 @@
+.filterContainer {
+  width: 90%;
+  margin: auto;
+  min-height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.filterOptionContent {
+  width: 24.5%;
+  padding: 5px;
+  margin-top: 30px;
+}
+
+.filterOption,
+.range {
+  width: 100%;
+  padding: 5px;
+  margin: 20px 0px;
+}
+
+.headerText {
+  text-align: center;
+  padding-top: 20px;
+}
+
+@media (max-width: 920px) {
+  .filterContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .filterOptionContent {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .filterOptionContent {
+    width: 100%;
+  }
+}
+
+@media (max-width: 550px) {
+  .filterContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,69 @@
+.tourherosection {
+  width: 100%;
+  min-height: 1300px;
+  background: url('../public/Images/ap.jpg') no-repeat center center/cover;
+  background-attachment: fixed;
+}
+
+.tourarticlesection {
+  width: 80%;
+  min-height: 600px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 20px;
+}
+
+.tourarticle {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto;
+  padding: 20px;
+  background: #eee;
+}
+
+.tourarticleheader {
+  width: 30%;
+  text-align: center;
+}
+
+.tourarticletext {
+  width: 60%;
+}
+
+.tourarticletext button {
+  padding: 10px;
+  background: rgb(0, 68, 77);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px auto;
+}
+
+@media (max-width: 768px) {
+  .tourarticlesection {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .tourarticle {
+    flex-direction: column;
+  }
+  .tourarticleheader,
+  .tourarticletext {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 450px) {
+  .tourarticlesection {
+    width: 100%;
+  }
+
+  .tourarticleheader,
+  .tourarticletext {
+    font-size: 0.8rem;
+  }
+}

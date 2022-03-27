@@ -1,0 +1,130 @@
+.apartmentsection {
+  width: 100%;
+  min-height: 1300px;
+  background: url('../public/Images/ww.jpg') no-repeat center center/cover;
+  background-attachment: fixed;
+}
+
+.apartmentsection h1 {
+  color: white;
+  text-align: center;
+}
+
+.roomdisplay {
+  background: #fff;
+  width: 80%;
+  margin: 30px auto;
+  min-height: 650px;
+}
+
+.roomcontent {
+  width: 90%;
+  margin: auto;
+  padding: 10px 0px;
+}
+
+.rooms,
+.roomtextcontent,
+.iconlist {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rooms {
+  align-items: center;
+}
+
+.rooms,
+.roomprice h4 {
+  margin: 30px 0px;
+}
+
+.rooms {
+  background: rgb(241, 241, 241);
+  box-shadow: 1px 1px 1px 2px lightgray;
+}
+
+.roomdetails {
+  width: 60%;
+}
+
+.roomprice {
+  width: 30%;
+}
+
+.roomdetails {
+  padding: 20px 10px 10px 10px;
+  margin-left: 20px;
+}
+
+.roomprice {
+  padding-top: 20px;
+}
+
+.roomdetails p,
+.roomdetails ul {
+  margin: 15px auto;
+}
+
+.iconlist {
+  width: 90%;
+}
+
+.roomprice {
+  text-align: center;
+}
+
+.roomprice h4 {
+  font-size: 2rem;
+}
+
+.roomprice button {
+  padding: 10px;
+  background: rgb(0, 68, 77);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+  .roomprice h4 {
+    font-size: 1.5rem;
+  }
+
+  .roomprice button {
+    padding: 7px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 920px) {
+  .roomtextcontent,
+  .rooms {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .rooms {
+    align-items: center;
+  }
+
+  .roomdetails,
+  .roomprice {
+    width: 100%;
+  }
+
+  .roomdetails {
+    margin-left: 0px;
+  }
+
+  .roomprice {
+    padding: 5px;
+  }
+}
+
+@media (max-width: 550px) {
+  .roomdisplay {
+    width: 100%;
+  }
+}

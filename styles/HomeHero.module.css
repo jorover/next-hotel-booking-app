@@ -1,0 +1,69 @@
+.homeHero {
+  width: 100vw;
+  height: 100vh;
+  background: url('../public/Images/mm.jpg') no-repeat center center/cover;
+}
+
+.homeherocontent {
+  background: rgb(0, 68, 77);
+  width: 50%;
+  min-height: 200px;
+  padding: 20px;
+  margin: 200px auto;
+  color: #fff;
+  border-radius: 20px;
+  text-align: center;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.homeherocontent h1 {
+  font-size: 2.125rem;
+}
+
+.homeherocontent p {
+  margin: 20px auto;
+}
+
+@media (max-width: 850px) {
+  .homeherocontent {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .homeherocontent {
+    width: 70%;
+    margin: 160px auto;
+  }
+
+  .homeherocontent h1 {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 680px) {
+  .homeherocontent {
+    transform: translateY(-5px);
+  }
+}
+
+@media (max-width: 550px) {
+  .homeherocontent {
+    width: 90%;
+  }
+
+  .homeherocontent h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .homeherocontent {
+    width: 100%;
+  }
+
+  .homeherocontent h1 {
+    font-size: 1.2rem;
+  }
+}

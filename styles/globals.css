@@ -1,0 +1,583 @@
+html,
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  min-height: 200px;
+}
+
+span {
+  color: #e5ff00;
+}
+
+h4 {
+  font-size: 0.9rem;
+}
+
+.btn {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background: #e5ff00;
+  cursor: pointer;
+}
+
+.underline {
+  border-bottom: 4px solid #e5ff00;
+  width: 10%;
+  margin: 40px auto;
+}
+
+.navbar-btn {
+  background: rgb(0, 68, 77);
+  color: #fff;
+}
+
+.toptext {
+  background: rgb(0, 68, 77);
+  width: 50%;
+  height: fit-content;
+  padding: 20px;
+  margin: 150px auto;
+  opacity: 0.8;
+  color: #fff;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.toptext p {
+  margin: 20px auto;
+}
+
+.teamImgOne,
+.teamImgTwo,
+.teamImgThree {
+  width: 100%;
+  min-height: 200px;
+}
+
+.teamImgOne {
+  background: url('../public/Images/c1.jpg') no-repeat center center/cover;
+}
+
+.teamImgTwo {
+  background: url('../public/Images/c0.jpg') no-repeat center center/cover;
+}
+
+.teamImgThree {
+  background: url('../public/Images/c.jpg') no-repeat center center/cover;
+}
+
+.suitebg {
+  width: 100vw;
+  min-height: 100vh;
+  background: url('../public/Images/ww.jpg') no-repeat center center/cover;
+  background-attachment: fixed;
+}
+
+.roomOne,
+.roomTwo,
+.roomThree,
+.roomFour,
+.roomFive,
+.roomSix {
+  width: 45%;
+  min-height: 250px;
+}
+
+.roomOne {
+  background: url('../public/Images/r11.jpeg') no-repeat center center/cover;
+}
+
+.roomTwo {
+  background: url('../public/Images/r1001.jpeg') no-repeat center center/cover;
+}
+
+.roomThree {
+  background: url('../public/Images/ro.jpeg') no-repeat center center/cover;
+}
+
+.roomFour {
+  background: url('../public/Images/ro1.jpeg') no-repeat center center/cover;
+}
+
+.roomFive {
+  background: url('../public/Images/ro1o.jpeg') no-repeat center center/cover;
+}
+
+.roomSix {
+  background: url('../public/Images/roo.jpeg') no-repeat center center/cover;
+}
+
+.suitecontainer {
+  background: #fff;
+  width: 80%;
+  min-height: 500px;
+  margin: 150px auto;
+}
+
+.suitelightbox {
+  width: 60%;
+  min-height: 300px;
+}
+
+.roomSuiteGallery {
+  width: 100%;
+  min-height: 400px;
+  display: grid;
+  grid-template-areas:
+    'header header aside'
+    'header header aside'
+    'figure footer footer'
+    'figure footer footer';
+  grid-gap: 10px;
+}
+
+.roomGalleryOne {
+  grid-area: header;
+}
+
+#SuiteAImgOne {
+  background: url('../public/Images/r11.jpeg') no-repeat center center/cover;
+}
+
+#SuiteAImgFour {
+  background: url('../public/Images/h0.jpeg') no-repeat center center/cover;
+}
+
+#SuiteBImgOne {
+  background: url('../public/Images/r1001.jpeg') no-repeat center center/cover;
+}
+
+#SuiteBImgFour {
+  background: url('../public/Images/hvv.jpeg') no-repeat center center/cover;
+}
+
+#SuiteAImgThree {
+  background: url('../public/Images/ro.jpeg') no-repeat center center/cover;
+}
+
+#SuiteAImggThree {
+  background: url('../public/Images/hv.jpeg') no-repeat center center/cover;
+}
+
+#SuiteCImgOne {
+  background: url('../public/Images/ro1.jpeg') no-repeat center center/cover;
+}
+
+#SuiteCImgFour {
+  background: url('../public/Images/mth.jpg') no-repeat center center/cover;
+}
+
+#SuiteAImggOne {
+  background: url('../public/Images/ro1o.jpeg') no-repeat center center/cover;
+}
+
+#SuiteAImggOne {
+  background: url('../public/Images/ro1o.jpeg') no-repeat center center/cover;
+}
+
+#SuiteBImggOnne {
+  background: url('../public/Images/roo.jpeg') no-repeat center center/cover;
+}
+
+.roomGalleryTwo {
+  grid-area: aside;
+  background: url('../public/Images/hf.jpeg') no-repeat center center/cover;
+}
+
+.roomGalleryThree {
+  grid-area: figure;
+  background: url('../public/Images/h1.jpeg') no-repeat center center/cover;
+}
+
+.roomGalleryFour {
+  grid-area: footer;
+}
+
+.suitecalendercontent {
+  border: 0.5px solid black;
+  width: 35%;
+  min-height: 300px;
+}
+
+.suiteheader,
+.suitecalender article,
+.suitecalender,
+.suiteicons,
+.suiteflex,
+.guestdetailsheader,
+.orderdetails,
+.formcontrol,
+.suitecalender section,
+.orderdetails section,
+.confirmationcontent,
+.innerRoomDetails {
+  display: flex;
+}
+
+.suiteheader,
+.suitecalender article,
+.suiteflex,
+.orderdetails,
+.suitecalender section,
+.orderdetails section,
+.confirmationcontent {
+  justify-content: space-between;
+}
+
+.suiteheader,
+.suitecalender input,
+.suitecalender article {
+  padding: 10px;
+}
+
+.suite {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.suite p {
+  font-size: 1.2rem;
+}
+
+.suite h2 {
+  font-size: 1.6rem;
+}
+
+.suite h2,
+.suitecalender {
+  margin: 10px 0px;
+}
+
+.suitecalender,
+.suiteicons,
+.checkout button,
+.orderdetails section,
+.confirmationcontent,
+.orderdetails,
+.confirmationOrder,
+.confirmBtn {
+  width: 100%;
+}
+
+.suitecalender,
+.suiteicons {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.suitecalender input,
+.suitecalender article {
+  width: 95%;
+  border: 1px solid rgb(204, 204, 204);
+}
+
+.suiteicons {
+  width: 10%;
+  height: fit-content;
+}
+
+.suitecalender article,
+.suiteflex,
+.suitecalender section,
+.orderdetails section {
+  align-items: center;
+}
+
+.suitecalendercontent button,
+.checkout button,
+.confirmBtn {
+  padding: 10px;
+  background: rgb(0, 68, 77);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px auto;
+}
+
+.suitedetailsection {
+  width: 60%;
+  padding: 10px;
+  margin-left: 20px;
+}
+
+.suitedetailsection h3 {
+  width: 30%;
+  height: fit-content;
+}
+
+.suiteinfotext,
+.guestdetails {
+  width: 60%;
+}
+
+.suiteflex {
+  margin: 30px auto;
+}
+
+.suiteflex ul {
+  display: inline-block;
+}
+
+.formcontrolcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 95%;
+}
+
+.formcontrol,
+.checkout {
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+}
+
+.formcontrol input,
+.formcontrol select,
+.formcontrol textarea {
+  padding: 7px;
+  margin: 10px 0px;
+}
+
+.ordersummarysection {
+  width: 40%;
+}
+
+.formcontrol h2,
+.ordersummarysection h2 {
+  padding: 20px 0px;
+}
+
+.checkout {
+  margin: 20px auto;
+}
+
+.orderdetails {
+  padding: 5px;
+  margin: 20px auto;
+  width: 100%;
+}
+
+.ordersummarycontent {
+  text-align: center;
+  margin-right: 20px;
+}
+
+.suitecalender section {
+  width: 95%;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.confirmationcontent {
+  border: 1px solid #eee;
+  padding: 10px;
+  margin: 30px auto;
+}
+
+.suitecontainer {
+  width: fit-content;
+  padding: 30px;
+}
+
+.confirmationtext {
+  padding: 10px;
+}
+
+.confirmation {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.hoteldetails {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+.confirmationheader p {
+  margin: 20px auto;
+}
+
+.room-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.confirmationBtn {
+  width: 40%;
+  margin: auto;
+}
+
+.confirmationOrder {
+  border: 1px solid #eee;
+  padding: 20px 0px 0px 0px;
+  width: 100%;
+}
+
+.errorMsg {
+  min-height: 100px;
+  font-size: 1.5rem;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.mom {
+  margin-top: 100px;
+}
+
+@media (max-width: 1000px) {
+  .roomOne,
+  .roomTwo,
+  .roomThree,
+  .roomFour,
+  .roomFive,
+  .roomSix {
+    width: 55%;
+  }
+
+  .innerRoomDetails {
+    flex-direction: column;
+  }
+
+  .innerRoomDetails h4 {
+    padding-top: 7px;
+  }
+}
+
+@media (max-width: 920px) {
+  #roomInnerImg {
+    width: 100%;
+  }
+}
+
+@media (max-width: 810px) {
+  .guestdetailsheader,
+  .suiteheader {
+    flex-direction: column;
+  }
+
+  .suitelightbox,
+  .suitecalendercontent,
+  .suitedetailsection {
+    width: 80%;
+    margin: 20px auto;
+  }
+
+  .guestdetails,
+  .ordersummarysection {
+    width: 100%;
+    margin: 10px;
+  }
+
+  .ordersummarysection {
+    padding: 10px;
+  }
+
+  .innerRoomDetails {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 768px) {
+  .toptext {
+    width: 70%;
+    margin-top: 200px;
+  }
+}
+
+@media (max-width: 650px) {
+  .suitelightbox,
+  .suitecalendercontent,
+  .suitedetailsection {
+    width: 90%;
+  }
+}
+
+@media (max-width: 550px) {
+  .toptext {
+    width: 90%;
+  }
+
+  .suitelightbox,
+  .suitecalendercontent,
+  .suitedetailsection {
+    width: 100%;
+  }
+
+  .suiteflex h3,
+  .suiteinfotext ul,
+  .suiteinfotext p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .confirmationsummary,
+  .confirmBtn {
+    font-size: 0.8rem;
+  }
+
+  .hoteldetailscontent h3 {
+    text-align: center;
+  }
+
+  .confirmationBtn {
+    width: 60%;
+  }
+
+  .suiteflex {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .suiteflex h3 {
+    margin: 40px 0px;
+    padding: 5px;
+    width: fit-content;
+  }
+
+  .innerRoomDetails {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 405px) {
+  h2 {
+    font-size: 1.05rem;
+  }
+
+  .hoteldetails,
+  .orderdetails {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .confirmSummary {
+    padding: 5px;
+  }
+}
