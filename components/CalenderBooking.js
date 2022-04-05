@@ -23,12 +23,18 @@ const CalenderBooking = ({ children }) => {
                 <form action="#" className={formStyles.formcontrolcontainer}>
                     <article className={formStyles.formcontrol}>
                         <label htmlFor="#"> Check In </label>
-                        <input type="date" className="calender"/>
+                        <input type="text" 
+                        className="calender" 
+                        placeholder="Check-In Data" 
+                        onFocus={(e) => e.target.type = 'date'}/>
                     </article>
 
                     <article className={formStyles.formcontrol}>
                         <label htmlFor="#"> Check Out </label>
-                        <input type="date" className="calender"/>
+                        <input type="text"
+                         className="calender" 
+                         placeholder="Check-Out Data" 
+                         onFocus={(e) => e.target.type = 'date'}/>
                     </article>
                 </form>
 
