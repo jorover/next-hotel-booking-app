@@ -252,11 +252,6 @@ h4 {
   padding: 10px;
 }
 
-.calender {
-  border: 1px solid red;
-  min-height: 1.1rem;
-}
-
 .suitecalender input::placeholder,
 .calender::placeholder {
   opacity: 1;
