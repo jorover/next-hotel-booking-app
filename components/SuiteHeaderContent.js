@@ -88,10 +88,16 @@ const SuiteHeaderContent = ( { suiteprice, roomType, galleryImg, galleryFooterIm
                <p> Per Night </p>
            </article>
            <form action="#" className="suitecalender" onSubmit={buttonSubmit}>
-               <input type="date" name="date" id="date" 
+               <input type="text" id="date" 
+               placeholder="Check-In Date" 
+               onFocus = {(e) => e.target.type = 'date'}
                value={firstDate} 
-               onChange={(e) => setFirstDate(e.target.value)} required />
-               <input type="date" name="date" id="date"
+               onChange={(e) => setFirstDate(e.target.value)} 
+               required />
+               <input type="text"  
+               id="date" 
+               placeholder="Check-Out Date" 
+               onFocus = {(e) => e.target.type = 'date'}
                value={secondDate} 
                onChange={(e) => setSecondDate(e.target.value)} 
                required />
